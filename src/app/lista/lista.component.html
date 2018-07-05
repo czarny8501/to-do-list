@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let elemencik of taskList; let indeksik = index">
+    {{elemencik}} <button (click)= "deleteTask(indeksik)">Delete</button>
+  </li>
+</ul>
