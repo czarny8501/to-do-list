@@ -8,11 +8,10 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 export class AppComponent {
   title = 'To do list';
   taskList = [];
-  @ViewChild('inpucik') inpucikZHtmla: ElementRef;
-
+  
   addTask(task: string): void {
     this.taskList.push(task);
-    this.inpucikZHtmla.nativeElement.value = '';
+   
   }
 
   deleteTask(index: number) {
