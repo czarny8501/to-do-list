@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ListaComponent } from './lista/lista.component';
+import { InputFormComponent } from './input-form/input-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaComponent,
+    InputFormComponent
   ],
   imports: [
     BrowserModule
