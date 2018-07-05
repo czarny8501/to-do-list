@@ -12,4 +12,8 @@ export class AppComponent {
   addTask(task: string): void {
     this.taskList.push(task);
   }
+
+  deleteTask(index: number) {
+    this.taskList.splice(index,2);
+  }
 }

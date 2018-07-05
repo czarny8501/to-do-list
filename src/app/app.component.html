@@ -5,7 +5,7 @@
 <input #inpucik>
 <button (click)="addTask(inpucik.value)">ADD</button>
 <ul>
-  <li *ngFor="let elemencik of taskList">
-    {{elemencik}}
+  <li *ngFor="let elemencik of taskList; let indeksik = index">
+    {{elemencik}} <button (click)="deleteTask(indeksik)">DELETE</button>
   </li>
 </ul>
