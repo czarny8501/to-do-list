@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'To do list';
+  taskList = [];
+
+  addTask(task: string): void {
+    this.taskList.push(task);
+  }
+
+  deleteTask(index: number){
+    this.taskList.splice(index,1);
+  }
+
 }
